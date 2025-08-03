@@ -109,6 +109,6 @@ RUN <<EOF
 EOF
 
 WORKDIR /app
-VOLUME ["/app/config", "/app/logs"]
+# VOLUME /app/config /app/logs
 HEALTHCHECK CMD ["pidof", "-q", "dotnet"]
 ENTRYPOINT ["ArchiSteamFarm", "--no-restart", "--system-required"]
