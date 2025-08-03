@@ -1,5 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
 		<DefaultItemExcludes>$(DefaultItemExcludes);config/**;debug/**;logs/**;overlay/**</DefaultItemExcludes>
 		<OutputType>Exe</OutputType>
 	</PropertyGroup>
@@ -63,3 +64,4 @@
 		</Content>
 	</ItemGroup>
 </Project>
+
