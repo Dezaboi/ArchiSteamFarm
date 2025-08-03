@@ -4,7 +4,7 @@ WORKDIR /app
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 COPY . .
-RUN dotnet publish ArchiSteamFarm.sln -c Release -o /app
+RUN dotnet publish ArchiSteamFarm/ArchiSteamFarm.csproj -c Release -o /app
 
 FROM base AS final
 WORKDIR /app
